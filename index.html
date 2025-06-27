@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlon Jordan | A Direct Match for Odeko</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Professional Blue & Gray (Background: #F9FAFB, Text: #111827, Accent: #2563EB) -->
+    <!-- Application Structure Plan: A side-by-side comparison layout. The page is dominated by a two-column grid: "What Odeko Needs" on the left and "How I Deliver" on the right. Each row represents a core requirement, creating a direct visual link. This is followed by a horizontal bar chart for quantifiable tech proficiency and concludes with comprehensive skills/certification lists. This structure is chosen for its directness and scannability, presenting a clear, persuasive argument of role alignment without complex navigation. -->
+    <!-- Visualization & Content Choices: 1. Role Fit -> Goal: Compare -> Two-column HTML/CSS Grid with interactive hover highlights -> Justification: The most direct way to visualize a 1:1 mapping of needs to proof. 2. Technical Skills -> Goal: Quantify -> Chart.js Horizontal Bar Chart -> Justification: Clearly shows years of experience for key tools, which is a very direct and easy-to-understand metric for proficiency. 3. Certs/Skills -> Goal: Inform -> Clean HTML Lists -> Justification: Provides comprehensive detail in an easily scannable format. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB; /* gray-50 */
+            color: #111827; /* gray-900 */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 450px;
+        }
+        .need-card, .proof-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .comparison-row:hover .need-card {
+            transform: scale(1.03);
+            border-color: #93C5FD; /* blue-300 */
+        }
+        .comparison-row:hover .proof-card {
+            transform: scale(1.03);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            background-color: #EFF6FF; /* blue-50 */
+        }
+        .icon-placeholder {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-7xl">
+
+        <!-- Header -->
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">A Direct Match for Odeko</h1>
+            <p class="text-xl md:text-2xl text-blue-700 font-medium mt-2">Marlon Jordan | IT Support Specialist</p>
+            <p class="max-w-3xl mx-auto mt-6 text-base text-gray-600">
+                This is a direct, side-by-side demonstration of how my decade of experience and specific skills align perfectly with the requirements of the IT Support Specialist role at Odeko.
+            </p>
+        </header>
+
+        <!-- Needs vs. Proof Section -->
+        <section class="mb-16 md:mb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
+                <!-- Headers -->
+                <h2 class="text-3xl font-bold text-gray-800 lg:col-span-1">What Odeko Needs</h2>
+                <h2 class="text-3xl font-bold text-gray-800 lg:col-span-1">How I Deliver</h2>
+                
+                <!-- Comparison Row 1 -->
+                <div class="lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 comparison-row">
+                    <div class="need-card bg-white p-6 rounded-lg border-2 border-transparent">
+                        <div class="flex gap-4 items-start">
+                             <div class="icon-placeholder bg-blue-100 text-blue-600">👤</div>
+                             <div>
+                                <h3 class="text-xl font-bold mb-2">Frontline Help Desk Support</h3>
+                                <p class="text-gray-600">Act as the first point of contact for business units and employees, resolving IT issues efficiently.</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="proof-card bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex gap-4 items-start">
+                            <div class="icon-placeholder bg-green-100 text-green-600">✔</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Proven Experience</h3>
+                                <p class="text-gray-700">Served as frontline technical support, triaging service issues for diverse business units and providing Tier 2/3 support to over 15,000 users.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Row 2 -->
+                <div class="lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 comparison-row">
+                    <div class="need-card bg-white p-6 rounded-lg border-2 border-transparent">
+                        <div class="flex gap-4 items-start">
+                            <div class="icon-placeholder bg-blue-100 text-blue-600">🔄</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Employee Lifecycle Management</h3>
+                                <p class="text-gray-600">Support all employee onboarding and offboarding activities from an IT perspective.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proof-card bg-white p-6 rounded-lg shadow-sm">
+                         <div class="flex gap-4 items-start">
+                            <div class="icon-placeholder bg-green-100 text-green-600">✔</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">End-to-End Management</h3>
+                                <p class="text-gray-700">Managed the complete IT onboarding and offboarding process for over 300 employees, including account provisioning, software deployment, and equipment security.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Row 3 -->
+                <div class="lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 comparison-row">
+                     <div class="need-card bg-white p-6 rounded-lg border-2 border-transparent">
+                         <div class="flex gap-4 items-start">
+                             <div class="icon-placeholder bg-blue-100 text-blue-600">💻</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Core Technology Proficiency</h3>
+                                <p class="text-gray-600">Strong skills in Mac OS X, Windows, Google Suite, Jamf, and Jira.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proof-card bg-white p-6 rounded-lg shadow-sm">
+                         <div class="flex gap-4 items-start">
+                            <div class="icon-placeholder bg-green-100 text-green-600">✔</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Quantifiable Expertise</h3>
+                                <p class="text-gray-700">Managed 1,000+ macOS devices with Jamf, provisioned accounts in Google Suite, and resolved 30+ incidents monthly in Jira.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Comparison Row 4 -->
+                 <div class="lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 comparison-row">
+                     <div class="need-card bg-white p-6 rounded-lg border-2 border-transparent">
+                         <div class="flex gap-4 items-start">
+                            <div class="icon-placeholder bg-blue-100 text-blue-600">🛡️</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Security Collaboration</h3>
+                                <p class="text-gray-600">Collaborate with the security team to ensure IT equipment and infrastructure are secure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proof-card bg-white p-6 rounded-lg shadow-sm">
+                         <div class="flex gap-4 items-start">
+                             <div class="icon-placeholder bg-green-100 text-green-600">✔</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Security Partnership</h3>
+                                <p class="text-gray-700">Partnered with security teams to conduct regular access audits and vulnerability assessments, ensuring 100% compliance with company security standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Proficiency Chart -->
+        <section class="mb-16 md:mb-20 bg-white p-6 rounded-lg shadow-md">
+             <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900">Technical Experience by the Numbers</h2>
+                <p class="mt-2 text-lg text-gray-600 max-w-4xl mx-auto">A clear breakdown of my years of hands-on experience with the platforms and technologies critical to the Odeko role.</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="experienceChart"></canvas>
+            </div>
+        </section>
+
+
+        <!-- Certifications & Skills Section -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Full Qualifications</h2>
+                <p class="mt-2 text-lg text-gray-600 max-w-4xl mx-auto">A complete overview of my professional credentials and the full spectrum of my technical capabilities.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Certifications -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Certifications</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Project Management Professional (PMI)</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> ITIL v4 (PeopleCert)</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Google AI Essentials (Google)</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Azure Fundamentals (Microsoft)</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Certified Scrum Product Owner (Scrum Alliance)</li>
+                    </ul>
+                </div>
+                <!-- Full Skillset -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Comprehensive Skills</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-700">IT Support Management</h4>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">End-User Support</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Incident Management</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Problem Resolution</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Network Fundamentals</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Asset Management</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700">Platforms & Tools</h4>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Jira</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Slack</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Google Workspace</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Microsoft Office</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Miro</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Tableau</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Confluence</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700">Technologies</h4>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                               <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Windows/Mac OS</span>
+                               <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Active Directory</span>
+                               <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">JAMF</span>
+                               <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">SCCM</span>
+                               <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Intune</span>
+                               <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Cisco</span>
+                               <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Single Sign-On (SSO)</span>
+                               <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">SAML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctx = document.getElementById('experienceChart').getContext('2d');
+            const experienceChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Overall IT Support', 'Network Troubleshooting', 'Windows', 'macOS', 'Jamf', 'Jira', 'Access Provisioning', 'Google Suite'],
+                    datasets: [{
+                        label: 'Years of Hands-On Experience',
+                        data: [11, 11, 11, 8, 8, 4, 4, 7],
+                        backgroundColor: 'rgba(37, 99, 235, 0.7)',
+                        borderColor: 'rgba(37, 99, 235, 1)',
+                        borderWidth: 1,
+                        borderRadius: 4,
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Years of Experience'
+                            }
+                        },
+                        y: {
+                           grid: {
+                                display: false
+                           }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false,
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
